@@ -19,14 +19,19 @@
     },
     "profiles": [
       {
-        "username": "ajaxdavis",
-        "url": "https://twitter.com/ajaxdavis",
-        "network": "twitter"
-      },
-      {
         "url": "https://github.com/thomasdavis",
         "username": "thomasdavis",
-        "network": "github"
+        "network": "GitHub"
+      },
+      {
+        "url": "https://x.com/thomasdavis",
+        "username": "thomasdavis",
+        "network": "X"
+      },
+      {
+        "url": "https://linkedin.com/thomasdavis",
+        "username": "thomasdavis",
+        "network": "LinkedIn"
       }
     ]
   },
