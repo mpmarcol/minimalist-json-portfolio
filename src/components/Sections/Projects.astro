@@ -1,7 +1,101 @@
 ---
 import Section from "../Section.astro";
+
+import { projects } from "@cv";
 ---
 
-<Section  title="Projects">
-    
+<Section title="Projects">
+  <ul>
+    {
+      projects.map(({ url, description, highlights, name, isActive }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <h3>
+                  {isActive && <span>&bull;</span> }
+                  <a
+                    href={url}
+                    title={`Ver el proyecto ${name}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {name}
+                  </a>
+                </h3>
+                <p>{description}</p>
+              </header>
+              <footer>
+                <ul>
+                  {highlights.map((highlight) => {
+                    return <li>{highlight}</li>;
+                  })}
+                </ul>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  header p {
+    font-size: 9pt;
+  }
+
+  footer ul {
+    font-size: 9pt;
+
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  footer li {
+    border-radius: 6px;
+    background-color: #ddd;
+    color: black;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+  }
+
+  span {
+    color: lightgreen;;
+    size: 10rem;
+  }
+
+  /* article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 1rem auto;
+  }
+
+  article footer ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0.5rem;
+    gap: 0.25rem;
+  }
+
+  footer li {
+    border-radius: 6px;
+    background-color: #ddd;
+    color: black;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  } */
+</style>

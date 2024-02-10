@@ -2,6 +2,7 @@
   "meta": {
     "theme": "elegant"
   },
+
   "basics": {
     "name": "Thomas Davis",
     "label": "Web Developer",
@@ -35,15 +36,31 @@
       }
     ]
   },
+
   "education": [
     {
+      "institution": "The University of Kentoucky",
       "endDate": "2009-12-12",
       "startDate": "2008-02-12",
       "area": "Software Engineering (incomplete)",
-      "studyType": "Bachelors",
+      "studyType": "Bachelors"
+    },
+    {
+      "endDate": "2012-12-12",
+      "startDate": "2010-02-12",
+      "area": "Software Engineering (incomplete)",
+      "studyType": "Degree",
+      "institution": "The University of Marlsborough"
+    },
+    {
+      "endDate": "2014-12-12",
+      "startDate": "2013-02-12",
+      "area": "Electronical Engineering",
+      "studyType": "Degree",
       "institution": "The University of Queensland"
     }
   ],
+
   "references": [
     {
       "reference": "Thomas was hired as a lead developer and, upon the leaving of our co-founder took over as CTO of Earbits. Thomas is, hands down, one of those A Players you hear of companies dying to hire. He is incredibly smart, not just at code but about everything from classical music to Chinese language and culture. Thomas is great to work with and, as a well established contributor to open source projects and several successful ventures, commands the respect of engineers at all levels. I would suggest doing anything you can to have him on your team.",
@@ -62,6 +79,7 @@
       "name": "Greg Davis"
     }
   ],
+
   "skills": [
     {
       "keywords": [
@@ -85,12 +103,48 @@
       "name": "Devops"
     }
   ],
+
+  "projects": [
+    {
+      "name": "mars.codes",
+      "isActive": true, 
+      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "highlights": [
+        "Elige tu propia aventura",
+        "En desarrollo"
+      ],
+      "url": "https://mars.codes"
+    },
+    {
+      "name": "AdventJS",
+      "isActive": true, 
+      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "highlights": [
+        "+1 millón de visitas",
+        "Multidioma",
+        "Javascript & TypeScript"
+      ],
+      "url": "https://mars.codes"
+    },
+    {
+      "name": "mars.codes.backup",
+      "isActive": false, 
+      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "highlights": [
+        "Elige tu propia aventura",
+        "En desarrollo"
+      ],
+      "url": "https://mars.codes"
+    }
+  ],
+
   "awards": [
     {
       "title": "Defender of the Internet",
       "awarder": "Fight For The Future"
     }
   ],
+
   "work": [
     {
       "summary": "Tokenized is a Bitcoin wallet for issuing, managing and trading digital tokens. I built out the front end which was packaged as an electron app. It was a difficult frontend to build because we store the users keys locally and used them to sign transactions and contracts.",
@@ -228,6 +282,7 @@
       "startDate": "2011-01-01"
     }
   ],
+
   "interests": [
     {
       "name": "Gardening"
